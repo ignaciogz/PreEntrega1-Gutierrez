@@ -11,7 +11,7 @@ const NavBar = () => {
       <Navbar className="App-navbar" expand="lg">
         <Container className="container-fluid flex-lg-column p-0">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Brand className='App-logo mx-auto' href="#home">SMARTER</Navbar.Brand>
+          <Navbar.Brand className='App-logo mx-auto' href="#inicio">SMARTER</Navbar.Brand>
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="App-navbar-items me-auto">

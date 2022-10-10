@@ -14,27 +14,32 @@
     }
 
     .collapse {
-        padding: 0 0 0 48px;
+        @media (min-width: 991.98px) {
+            padding: 0 0 0 48px;
+        }
     }
 
     .App-navbar-items {
         .nav-link {
             color: whitesmoke;
             font-size: 0.9rem;
+            font-weight: bold;
             
             &:hover {
                 color: black;
             }
 
-            &::after {
-                content: "/";
-                color: black;
-                margin-left: 16px;
-            }
-
-            &:last-child::after {
-                content: "";
-                margin-left: 16px;
+            @media (min-width: 991.98px) {
+                &::after {
+                    content: "/";
+                    color: black;
+                    margin-left: 16px;
+                }
+    
+                &:last-child::after {
+                    content: "";
+                    margin-left: 16px;
+                }
             }
         }
     }
