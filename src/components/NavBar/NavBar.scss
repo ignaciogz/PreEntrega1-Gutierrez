@@ -1,17 +1,23 @@
 
 .App-navbar {
     background-color: coral;
+    width: 100%;
 
     .App-logo {
         font-family: 'Libre Barcode 128 Text', cursive;
         font-size: 2.6rem;
-        padding: 0;
+        padding: 0 0 0 16px;
+
+        @media (min-width: 991.98px) {
+            padding: 0 0 0 48px;
+        }
+    }
+
+    .collapse {
+        padding: 0 0 0 48px;
     }
 
     .App-navbar-items {
-        justify-content: flex-end;
-        width: 100%;
-
         .nav-link {
             color: whitesmoke;
             font-size: 0.9rem;
