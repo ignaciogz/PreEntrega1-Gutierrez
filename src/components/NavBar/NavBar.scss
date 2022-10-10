@@ -1,0 +1,35 @@
+
+.App-navbar {
+    background-color: coral;
+
+    .App-logo {
+        font-family: 'Libre Barcode 128 Text', cursive;
+        font-size: 2.6rem;
+        padding: 0;
+    }
+
+    .App-navbar-items {
+        justify-content: flex-end;
+        width: 100%;
+
+        .nav-link {
+            color: whitesmoke;
+            font-size: 0.9rem;
+            
+            &:hover {
+                color: black;
+            }
+
+            &::after {
+                content: "/";
+                color: black;
+                margin-left: 16px;
+            }
+
+            &:last-child::after {
+                content: "";
+                margin-left: 16px;
+            }
+        }
+    }
+}
